@@ -37,14 +37,13 @@ Technologies Used
 - Laragon
 - HeidiSQL
 
-What I Learned
 One of the main things I learned from this project was how database relationships work in Laravel.
 Students and courses have a many-to-many relationship because one student can register for multiple courses, and one course can have multiple students.
 To handle this, I created a course_student pivot table that connects students to courses. I also used Laravel's belongsToMany() relationship in the Student and Course models.
 I learned how to use migrations to create and manage database tables, how controllers handle application logic, and how routes connect requests to the correct controller methods and pages.
-I also worked with validation, Eloquent queries, adding and removing relationships, search, filtering, and pagination.
+I also worked with validation, adding and removing relationships, search, filtering, and pagination.
 Most importantly, this project helped me understand how the different parts of a Laravel application work together instead of treating them as separate things.
-Database Structure
+
 The project uses three main tables:
 
 - students — stores student information such as name and email.
@@ -52,6 +51,7 @@ The project uses three main tables:
 - course_student — connects students to the courses they register for.
 
 The pivot table has foreign keys linking it to the students and courses tables. It also prevents the same student-course combination from being registered more than once.
+
 
 How to Run the Project Locally
 
@@ -97,6 +97,7 @@ Project Repository
 GitHub: https://github.com/emmy3oy/student-course-app
 
 Final Note
+
 
 This project is part of my journey into backend development. I built it to practise what I have been learning and get a better understanding of how Laravel applications work, especially when dealing with databases and relationships.
 
